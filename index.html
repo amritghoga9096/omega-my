@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Mine page</title>
+    <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        html{
+            height: 100vh;
+        }
+        
+    *{
+        margin: 0;padding: 0;
+        box-sizing: border-box;
+       
+    }
+
+    body{
+        background: linear-gradient(#141e30, #243b55);
+        font-family: 'Poppins',sans-serif;
+    }
+
+    .header{
+      margin: 10px 12px;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+       background-image: url(https://www.finks.com/cdn/shop/collections/omega_1500_x_500_38587ca6-89ef-4a3d-be70-69d71bf88bea_1200x1200.jpg?v=1561040645 );
+       
+       box-shadow: 0 15px 25px rgba(0,0,0, 0.9);
+       
+       margin: 0;
+       margin-bottom: 20px;
+       padding: 50px;
+       background-size: cover;
+    }
+
+    .header img{
+         position: relative;
+         left: 40px;
+         bottom: 40px;
+        width: 20%;
+        height: 20%;
+  /* transform: translate(% , 50%); */
+  /* filter: hue-rotate(0deg) saturate(0%) contrast(0); */
+   filter: invert(100%) ;
+   
+   
+   
+   
+    }
+
+    .header h2{
+        color: white;
+        margin-top: 40px;
+        font-size: 25px;
+        letter-spacing: 2px;
+        position: relative;
+        right: 108px;
+        background: rgba(0,0,0,.5);
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+         text-align: center;
+        padding-left: 100px;
+        padding-right: 10px;
+        border-end-end-radius: 10px ;
+       
+        
+        
+    }
+    .assets{
+          background: black;
+            width: 90%;
+            margin-left: 20px;
+            color: white;
+            padding: 10px 20px; display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            line-height: 2rem;
+           z-index: 999;
+            border-radius: 10px  ;
+            border: 2px solid #03e9f4;
+            background: rgba(0,0,0,0.7);
+            box-sizing: border-box; box-shadow: 0 15px 25px rgba(0,0,0,.6);
+             border-radius: 10px;
+             transform: translateY(-50%);
+    }
+
+      /* buttoncontainer 1 */
+    #buttonContainer1{
+        
+        width: 80%;
+            margin-left: 40px;
+        display: flex;
+        margin-top: -15px;
+        justify-content: space-between;
+        flex-direction: row;
+        
+        
+    }
+
+    #buttonContainer1 button{
+        padding: 20px 30px 10px 20px;
+        background: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 40px;
+        /* border: 2px solid rgb(0, 255, 255); */
+        border: none;
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+        outline: 0;
+        
+    }
+    #buttonContainer1 button i {
+        font-size: 30px;
+    }
+
+    /* buttoncontainer 2 */
+    #buttonContainer2{
+        
+        width: 80%;
+            margin-left: 40px;
+        display: flex;
+        margin-top: 17px;
+        justify-content: space-between;
+        flex-direction: row;
+        
+        
+    }
+
+    #buttonContainer2 button{
+        padding: 20px 30px 10px 20px;
+        background: transparent;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 40px;
+        text-transform: uppercase;
+        /* border: 2px solid rgb(0, 255, 255); */
+        border: none;
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+         box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+        outline: 0;
+        
+    }
+    #buttonContainer2 button i {
+        font-size: 30px;
+        
+    }
+
+     /* signout container  */
+     #Sign-Out{
+        width: 80%; 
+          margin-left: 40px; 
+        display: flex; 
+         margin-top: 20px; 
+        justify-content: space-between; 
+        flex-direction:column;
+    }
+
+     #Sign-Out button {
+        width: 80%;
+         margin-left: 40px;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #03e9f4;
+  /* background: transparent; */
+  background: rgba(0,0,0,.5);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border: 0;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  margin-top: 10px;
+  letter-spacing: 4px;
+  
+
+}
+
+
+    #Sign-Out button{
+       
+        padding: 5px -20px;
+        font-size: 20px;
+        /* text-transform: uppercase; */
+        
+        /* border: 1px solid rgb(0, 255, 255); */
+        border-radius: 10px;
+        outline: 0;
+    }
+
+    #Sign-Out button i{
+        font-size: 20px;
+        
+    }
+
+
+    #Sign-Out button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px  #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+#Sign-Out  button span {
+  position: absolute;
+  display: flex;
+  
+}
+
+#Sign-Out button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(80deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+#Sign-Out button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+#Sign-Out button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+#Sign-Out button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+/* popup notificatio of sign out  css  */
+
+#popup-container {
+      width: 80%;
+
+      display: none ;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 40px 20px;
+       background: rgba(0,0,0, 0.7);
+       border-end-end-radius: 20px ;
+       border-top-left-radius: 20px;
+       border: 1px solid;
+      color: #fff;
+      z-index: 1000;
+    }
+
+    #popup-container p{
+        letter-spacing: 1.5px;
+        font-size: 20px;
+    }
+  
+    #popup-container button{
+        padding: 5px 20px;
+        position: relative;
+        left: 150px;
+        top: 30px;
+        margin: 0 10px;
+        font-size: 20px;
+        border: none;
+        color: #00ccff;
+        background: transparent;
+        border: 1px solid #00ccff;
+        border-end-end-radius: 10px ;
+        border-top-left-radius: 5px; 
+       
+        
+
+        
+    }
+
+    #popup-container button:hover{
+        color: black;
+    }
+    
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(6px);
+      z-index: 999;
+    }
+
+   
+    #close-btn {
+      position: absolute;
+      top: -20px;
+      right: -12px;
+      cursor: pointer;
+      font-size: 30px;
+      color: rgb(198, 189, 189,0.7);
+      background: rgba(0,0,0, 0.7);
+      border: 1px solid;
+       border-radius: 50%;
+      width: 10%;
+      text-align: center;
+      padding-left: 5px;
+      
+      
+    }
+
+    
+
+
+    /* lines  animation property of buttons */
+    
+    #popup-container button:hover {
+  background: #03e8f4;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 5px  #03e9f4,
+              0 0 25px  #03e9f4,
+              0 0 50px  #03e9f4,
+              0 0 100px  #03e9f4;
+}
+
+#popup-container  span {
+  position: absolute;
+  display: flex;
+  
+}
+
+#popup-container span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(80deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+#popup-container span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+#popup-container span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+#popup-container span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+    
+
+
+
+  
+
+
+
+    </style>
+</head>
+<body>
+   <div class="header">
+    <img src="logo.png" alt="">
+     <h2>7986***128</h2>
+   </div>
+       
+    <div class="assets">
+        <p>Balance <br><span>&#8377; 00.00</span></p>
+        <p>Recharge <br> <span>&#8377; 00.00</span></p>
+        <p>Income<br><span>&#8377; 00.00</span></p>
+    </div>
+      <!-- 1st buttonContainer -->
+     <div id="buttonContainer1">
+         <!-- 1st button -->
+        <button><i class="fa-solid fa-file fa-beat-fade" style="color: #00ccff;"></i><br>My Plans</button>
+        <!-- 2nd button -->
+        <button><i class="fa-solid fa-filter-circle-dollar fa-beat-fade" style="color: #00ccff;"></i><br>Fund Record</button> </div>
+        <!-- 2nd buttonContainer -->
+        <div id="buttonContainer2">
+        <!-- 1st button -->
+        <button><i class="fa-solid fa-building fa-beat-fade" style="color: #06ccfe;"></i><br>Company</button>
+        <!-- 2nd button -->
+        <button><i class="fa-solid fa-gear fa-spin-pulse" style="color: #05c1f0;"></i><br>Bank Setting</button>
+        </div>
+         <!-- signout buttoncontainer -->
+         <div  id="Sign-Out">
+            <button onclick="showPopup()" href="#">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa-solid fa-arrow-left fa-flip" style="color: #00e1ff;"></i>
+                Sign-Out
+              </button>
+        </div>
+        
+        <!-- pop up -->
+
+       
+                <div id="overlay"></div>
+                <div id="popup-container">
+                    <span></span><span></span><span></span><span></span>
+                <span id="close-btn" onclick="closePopup()"><i class="fa-solid fa-xmark "></i></span>
+                 <p>Are you sure you want to exit?</p>
+                <button onclick="closePopup()">
+                 
+                <i class="fa-solid fa-xmark fa-beat-fade" ;></i></button>
+                 <button onclick="redirectToLoginPage()">
+                
+                    <i class="fa-solid fa-check fa-beat-fade"></i></button>
+                
+                 </div>
+             
+          <script>
+            function showPopup() {
+      // Show the overlay and popup
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("popup-container").style.display = "block";
+    }
+
+    function closePopup() {
+      // Hide the overlay and popup
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("popup-container").style.display = "none";
+    }
+
+    function redirectToLoginPage() {
+      // Redirect to the login page (replace with the actual URL)
+      window.location.href = "login.html";
+    }
+          </script>
+</body>
+</html>
